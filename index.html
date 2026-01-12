@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Lumina Collection Series - Premium wireless headphones with studio-grade audio quality. Available in 5 exclusive colors: Matte Black, Royal Gold, Sterling Silver, Midnight Blue, and Deep Forest."
+    />
+    <meta
+      name="keywords"
+      content="premium headphones, wireless headphones, noise cancelling, studio headphones, luxury audio"
+    />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Lumina - Collection Series" />
+    <meta
+      property="og:description"
+      content="Premium wireless headphones with studio-grade audio quality"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/lumina-logo-white.png" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Lumina - Collection Series" />
+    <meta
+      name="twitter:description"
+      content="Premium wireless headphones with studio-grade audio quality"
+    />
+
+    <title>Lumina - Collection Series | Premium Wireless Headphones</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&family=Oswald:wght@700&family=Rajdhani:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- External Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  </head>
+
+  <body>
+    <div class="noise-overlay" aria-hidden="true"></div>
+
+    <!-- Skip to content link for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- FIXED UI -->
+    <header role="banner">
+      <div class="logo" aria-label="Lumina Brand">LUMINA</div>
+      <div class="header-actions">
+        <button class="cart-btn" aria-label="Shopping cart, 0 items">
+          CART (0)
+        </button>
+        <button
+          id="scroll-toggle"
+          class="scroll-toggle"
+          aria-pressed="false"
+          title="Toggle smooth scrolling"
+        >
+          Smooth
+        </button>
+      </div>
+    </header>
+
+    <!-- SIDEBAR PROGRESS -->
+    <nav class="progress-bar" aria-label="Product navigation" role="navigation">
+      <div class="line" aria-hidden="true"></div>
+      <div class="active-indicator" aria-hidden="true"></div>
+      <div class="nums">
+        <span aria-label="Product 1">01</span>
+        <span aria-label="Product 2">02</span>
+        <span aria-label="Product 3">03</span>
+        <span aria-label="Product 4">04</span>
+        <span aria-label="Product 5">05</span>
+      </div>
+    </nav>
+
+    <main class="scroll-container" id="main-content" role="main">
+      <!-- SECTION 1: BLACK -->
+      <section
+        class="product-section"
+        id="black"
+        aria-labelledby="product-black-title"
+      >
+        <div class="floating-blob" aria-hidden="true"></div>
+        <div class="bg-text" aria-hidden="true">OBSIDIAN</div>
+
+        <!-- TECH DECOR -->
+        <div class="tech-grid" aria-hidden="true">
+          <div class="grid-line"></div>
+          <div class="grid-line vertical"></div>
+          <span class="tech-tag tl">SERIES X // V2.0</span>
+          <span class="tech-tag tr">ANC: ACTIVE</span>
+          <span class="tech-tag bl">LATENCY: 40MS</span>
+          <span class="tech-tag br">BATTERY: 100%</span>
+        </div>
+
+        <div class="content-wrapper">
+          <div class="info">
+            <div class="mini-label">STUDIO SERIES</div>
+            <h2 id="product-black-title">MATTE BLACK</h2>
+            <p>
+              Engineered with carbon fiber composite. The darkest black we've
+              ever created.
+            </p>
+            <div class="specs-row">
+              <div class="spec"><span>60h</span><small>Battery</small></div>
+              <div class="spec">
+                <span>42db</span><small>Noise Canc.</small>
+              </div>
+            </div>
+            <button
+              class="buy-btn"
+              aria-label="Add Matte Black headphones to cart for $340"
+            >
+              ADD TO CART - $340
+            </button>
+          </div>
+          <div class="image-stage">
+            <img
+              src="assets/headphone-black.png"
+              class="main-img"
+              alt="Matte Black Lumina headphones with carbon fiber finish"
+              loading="lazy"
+              onerror="this.classList.add('error'); window.showUserError('Failed to load headphone image: headphone-black.png', 'image')"
+            />
+            <!-- FLOATING FLOATER -->
+            <div class="floater f1" aria-hidden="true">
+              <div class="icon">⚡</div>
+              <span>Fast Charge</span>
+            </div>
+          </div>
+          <!-- SCROLL HINT -->
+          <div class="scroll-hint" aria-hidden="true">
+            <div class="mouse">
+              <div class="wheel"></div>
+            </div>
+            <span>SCROLL</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 2: GOLD -->
+      <section
+        class="product-section"
+        id="gold"
+        aria-labelledby="product-gold-title"
+      >
+        <div class="bg-text" aria-hidden="true">ROYALTY</div>
+        <div class="tech-grid" aria-hidden="true">
+          <span class="tech-tag tl">EDITION: LUXE</span>
+          <span class="tech-tag br">24K PLATED</span>
+        </div>
+        <div class="content-wrapper flip">
+          <div class="image-stage">
+            <img
+              src="assets/headphone-gold.png"
+              class="main-img"
+              alt="Royal Gold Lumina headphones with 24K gold plating and genuine leather"
+              onerror="this.classList.add('error'); window.showUserError('Failed to load headphone image: headphone-gold.png', 'image')"
+            />
+            <div class="floater f2" aria-hidden="true">
+              <div class="icon">💎</div>
+              <span>Premium</span>
+            </div>
+          </div>
+          <div class="info">
+            <div class="mini-label gold">LIMITED EDITION</div>
+            <h2 id="product-gold-title">ROYAL GOLD</h2>
+            <p>
+              A statement piece. Genuine leather earcups with gold-plated
+              accents for the chosen few.
+            </p>
+            <div class="specs-row">
+              <div class="spec"><span>Real</span><small>Leather</small></div>
+              <div class="spec"><span>Ltd</span><small>Edition</small></div>
+            </div>
+            <button
+              class="buy-btn gold"
+              aria-label="Secure Royal Gold limited edition headphones for $380"
+            >
+              SECURE PAIR - $380
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 3: SILVER -->
+      <section
+        class="product-section"
+        id="silver"
+        aria-labelledby="product-silver-title"
+      >
+        <div class="bg-text" aria-hidden="true">STERLING</div>
+        <div class="content-wrapper">
+          <div class="info">
+            <div class="mini-label silver">INDUSTRIAL</div>
+            <h2 id="product-silver-title">STERLING SILVER</h2>
+            <p>
+              Raw aluminum finish. Resists scratches and drops. Built for the
+              studio environment.
+            </p>
+            <button
+              class="buy-btn"
+              aria-label="Buy Sterling Silver headphones for $340"
+            >
+              BUY - $340
+            </button>
+          </div>
+          <div class="image-stage">
+            <img
+              src="assets/headphone-silver.png"
+              class="main-img"
+              alt="Sterling Silver Lumina headphones with industrial aluminum finish"
+              onerror="this.classList.add('error'); window.showUserError('Failed to load headphone image: headphone-silver.png', 'image')"
+            />
+            <div class="floater f1" aria-hidden="true">
+              <div class="icon">🛡️</div>
+              <span>Durable</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 4: BLUE -->
+      <section
+        class="product-section"
+        id="blue"
+        aria-labelledby="product-blue-title"
+      >
+        <div class="bg-text" aria-hidden="true">MIDNIGHT</div>
+        <div class="content-wrapper flip">
+          <div class="image-stage">
+            <img
+              src="assets/headphone-blue.png"
+              class="main-img"
+              alt="Midnight Blue Lumina headphones optimized for jazz and classical music"
+              onerror="this.classList.add('error'); window.showUserError('Failed to load headphone image: headphone-blue.png', 'image')"
+            />
+          </div>
+          <div class="info">
+            <div class="mini-label blue">OCEANIC</div>
+            <h2 id="product-blue-title">MIDNIGHTBLUE</h2>
+            <p>
+              Calming frequency response optimized for jazz and classical
+              listening.
+            </p>
+            <button
+              class="buy-btn blue"
+              aria-label="Buy Midnight Blue headphones for $340"
+            >
+              BUY - $340
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 5: GREEN -->
+      <section
+        class="product-section"
+        id="green"
+        aria-labelledby="product-green-title"
+      >
+        <div class="bg-text" aria-hidden="true">FOREST</div>
+        <div class="content-wrapper">
+          <div class="info">
+            <div class="mini-label green">SUSTAINABLE</div>
+            <h2 id="product-green-title">DEEP FOREST</h2>
+            <p>Constructed from 100% recycled plastics and vegan leather.</p>
+            <button
+              class="buy-btn green"
+              aria-label="Buy Deep Forest sustainable headphones for $340"
+            >
+              BUY - $340
+            </button>
+          </div>
+          <div class="image-stage">
+            <img
+              src="assets/headphone-green.png"
+              class="main-img"
+              alt="Deep Forest Lumina headphones made from recycled materials and vegan leather"
+              onerror="this.classList.add('error'); window.showUserError('Failed to load headphone image: headphone-green.png', 'image')" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Application Modules (ES Modules) -->
+    <script src="webgl-shader.js"></script>
+    <script type="module" src="main.js"></s
+  </body>
+</html>
